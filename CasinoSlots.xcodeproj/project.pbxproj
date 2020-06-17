@@ -13,6 +13,7 @@
 		E30F2A1A249A5A9800A534C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30F2A19249A5A9800A534C3 /* Assets.xcassets */; };
 		E30F2A1D249A5A9800A534C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30F2A1C249A5A9800A534C3 /* Preview Assets.xcassets */; };
 		E30F2A20249A5A9800A534C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30F2A1E249A5A9800A534C3 /* LaunchScreen.storyboard */; };
+		E30F2A29249A73CE00A534C3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F2A28249A73CE00A534C3 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E30F2A1C249A5A9800A534C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E30F2A1F249A5A9800A534C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E30F2A21249A5A9800A534C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30F2A28249A73CE00A534C3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E30F2A12249A5A9100A534C3 /* CasinoSlots */ = {
 			isa = PBXGroup;
 			children = (
+				E30F2A27249A73B300A534C3 /* Views */,
 				E30F2A13249A5A9100A534C3 /* AppDelegate.swift */,
 				E30F2A15249A5A9100A534C3 /* SceneDelegate.swift */,
 				E30F2A17249A5A9100A534C3 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				E30F2A1C249A5A9800A534C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E30F2A27249A73B300A534C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E30F2A28249A73CE00A534C3 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				E30F2A14249A5A9100A534C3 /* AppDelegate.swift in Sources */,
 				E30F2A16249A5A9100A534C3 /* SceneDelegate.swift in Sources */,
+				E30F2A29249A73CE00A534C3 /* CardView.swift in Sources */,
 				E30F2A18249A5A9100A534C3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
