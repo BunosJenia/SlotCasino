@@ -9,11 +9,7 @@
 import SwiftUI
 
 struct CardView: View {
-//    @Binding var symbol: String
-//    //@Binding var isMatched: Bool
-//    @Binding var background: Color
-    
-    @State var slotBlock: SlotBlock
+    @Binding var slotBlock: SlotBlock
     
     var body: some View {
         Image(slotBlock.symbol.rawValue)
@@ -23,5 +19,10 @@ struct CardView: View {
             .background(slotBlock.background.opacity(0.5))
             .cornerRadius(20)
             .frame(width: 100, height: 100)
+            .padding(.all, 5)
+            .scaleEffect(slotBlock.isValid ? 1 : 1.03)
+            .animation(slotBlock.isValid ? Animation.easeInOut(duration: 0.3).repeatCount(7, autoreverses: true) : nil)
+            .shadow(radius: slotBlock.isValid ? 7 : 5)
+            
     }
 }
